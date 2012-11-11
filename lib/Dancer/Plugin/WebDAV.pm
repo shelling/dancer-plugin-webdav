@@ -1,7 +1,7 @@
 package Dancer::Plugin::WebDAV;
 use strict;
 use warnings;
-our $VERSION = '0.0.2';
+our $VERSION = '0.0.3';
 
 use Dancer ':syntax';
 use Dancer::Exception ':all';
