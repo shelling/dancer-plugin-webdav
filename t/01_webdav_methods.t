@@ -22,8 +22,9 @@ lock        "/" => sub { "lock" };
 unlock      "/" => sub { "unlock" };
 
 for my $m (@methods) {
-    route_exists        [ $m => "/" ], "route handler found for method $m";
-    response_status_is  [ $m => "/" ], 200, "response status is 200 for $m";
+    route_exists          [ $m => "/" ], "route handler found for method $m";
+    response_status_is    [ $m => "/" ], 200, "response status is 200 for $m";
+    response_content_like [ $m => "/" ], qr{$m}, "response content is OK for $m";
 }
 
 done_testing;
