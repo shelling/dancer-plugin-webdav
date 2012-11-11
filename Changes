@@ -1,5 +1,8 @@
 Revision history for Perl extension Dancer::Plugin::WebDAV
 
+0.0.5   Mon Nov 12 02:13:29 2012
+        - more SYNOPSIS
+
 0.0.4   Mon Nov 12 02:04:18 2012
         - fixed typos in pod
         - make sure routes can return correct content
