@@ -49,7 +49,7 @@ Dancer::Plugin::WebDAV - Defines routes for methods of HTTP WebDAV
 =head1 DESCRIPTION
 
 Dancer::Plugin::WebDAV provides the routes controllers to define routes for WebDAV.
-Just like the routes controllers L<any|Dancer/any>, L<get/Dancer/get>, L<patch/Dancer/patch>,
+Just like the routes controllers L<any|Dancer/any>, L<get|Dancer/get>, L<patch|Dancer/patch>,
 L<post|Dancer/post>, L<del|Dancer/del>, L<options|Dancer/options> and L<put|Dancer/put>.
 
 Please making sure your server implementation accepts HTTP methods from WebDAV. The bin/app.pl
