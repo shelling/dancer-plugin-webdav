@@ -1,7 +1,7 @@
 package Dancer::Plugin::WebDAV;
 use strict;
 use warnings;
-our $VERSION = '0.0.5';
+our $VERSION = '0.0.6';
 
 use Dancer ':syntax';
 use Dancer::Exception ':all';
@@ -23,7 +23,7 @@ for my $method (@METHODS) {
     };
 }
 
-register_plugin;
+register_plugin( for_versions => [ qw( 1 2 ) ] );
 
 1;
 __END__
@@ -75,6 +75,8 @@ L<post|Dancer/post>, L<del|Dancer/del>, L<options|Dancer/options> and L<put|Danc
 Please making sure your server implementation accepts HTTP methods from WebDAV. The bin/app.pl
 coming along with the Dancer app skeleton uses L<HTTP::Server::Simple> which has no support
 on WebDAV. L<Plack::Handler::Standalone>, the default handler of plackup, does support WebDAV.
+
+This plugin supports Dancer 1 and 2.
 
 =head1 AUTHOR
 
