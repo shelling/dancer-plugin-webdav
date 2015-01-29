@@ -1,5 +1,8 @@
 Revision history for Perl extension Dancer::Plugin::WebDAV
 
+0.0.6   Sat Jan 24 10:42:47 2015
+        - support for Dances version 1 and 2
+
 0.0.5   Mon Nov 12 02:13:29 2012
         - more SYNOPSIS
 
